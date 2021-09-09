@@ -15,6 +15,7 @@ interface GoogleAutocompleteProps {
     nextElement?: HTMLElement;
     inputProps?: any;
     isAutocompleteEnabled?: boolean;
+    labelContent: ReactNode;
     types?: GoogleAutocompleteOptionTypes[];
     onSelect?(place: google.maps.places.PlaceResult, item: AutocompleteItem): void;
     onToggleOpen?(state: { inputValue: string; isOpen: boolean }): void;
@@ -43,6 +44,7 @@ class GoogleAutocomplete extends PureComponent<GoogleAutocompleteProps, GoogleAu
             initialValue,
             onToggleOpen = noop,
             inputProps = {},
+            labelContent,
         } = this.props;
 
         const {
@@ -59,6 +61,7 @@ class GoogleAutocomplete extends PureComponent<GoogleAutocompleteProps, GoogleAu
                     autoComplete,
                 } }
                 items={ items }
+                labelContent={ labelContent }
                 listTestId="address-autocomplete-suggestions"
                 onChange={ this.onChange }
                 onSelect={ this.onSelect }

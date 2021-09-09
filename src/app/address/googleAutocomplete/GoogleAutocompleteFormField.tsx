@@ -56,6 +56,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
             isAutocompleteEnabled={ countryCode ?
                 supportedCountries.indexOf(countryCode) > -1 :
                 false }
+            labelContent={ labelContent }
             nextElement={ nextElement }
             onChange={ onChange }
             onSelect={ onSelect }
@@ -65,6 +66,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
         apiKey,
         countryCode,
         inputProps,
+        labelContent,
         nextElement,
         onChange,
         onSelect,

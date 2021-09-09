@@ -12,6 +12,7 @@ export interface AutocompleteProps {
     children?: ReactNode;
     items: AutocompleteItem[];
     inputProps?: any;
+    labelContent: ReactNode;
     listTestId?: string;
     onToggleOpen?(state: { inputValue: string; isOpen: boolean }): void;
     onSelect?(item: AutocompleteItem): void;
@@ -27,6 +28,7 @@ class Autocomplete extends PureComponent<AutocompleteProps> {
             items,
             children,
             onSelect,
+            labelContent,
             listTestId,
         } = this.props;
 
@@ -46,8 +48,12 @@ class Autocomplete extends PureComponent<AutocompleteProps> {
                     getMenuProps,
                     getItemProps,
                     highlightedIndex,
-                }) => (
+                }) => {
+                    const downshiftInputProps = getInputProps();
+
+                    return (
                     <div>
+                        <span id={ downshiftInputProps['aria-labelledby'] } style={ {width: 100, height: 100, position: 'absolute', top: ' -2000px ', left: 0} }>{ labelContent }</span>
                         <input
                             { ...getInputProps() }
                             { ...inputProps }
@@ -63,8 +69,8 @@ class Autocomplete extends PureComponent<AutocompleteProps> {
                                 />
                                 { children }
                             </Popover> }
-                    </div>
-                ) }
+                    </div>);
+                    } }
             </Downshift>
         );
     }
