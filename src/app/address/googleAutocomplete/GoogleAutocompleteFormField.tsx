@@ -79,7 +79,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
         <div className={ `dynamic-form-field dynamic-form-field--addressLineAutocomplete` }>
             <FormField
                 input={ renderInput }
-                label={ <label className="form-label optimizedCheckout-form-label" htmlFor={ inputProps.id } id={ labelID } >{ labelContent }</label> }
+                label={ <label className="form-label optimizedCheckout-form-label" htmlFor={ inputProps.id } id={ labelID }>{ labelContent }</label> }
                 name={ fieldName }
             />
         </div>
