@@ -36,6 +36,7 @@ class Autocomplete extends PureComponent<AutocompleteProps> {
                 initialHighlightedIndex={ initialHighlightedIndex }
                 initialInputValue={ initialValue }
                 itemToString={ this.itemToString }
+                labelId={ inputProps.labelid }
                 onChange={ onSelect }
                 onStateChange={ this.handleStateChange }
                 stateReducer={ this.stateReducer }
