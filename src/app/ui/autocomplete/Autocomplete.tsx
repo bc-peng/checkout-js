@@ -30,13 +30,15 @@ class Autocomplete extends PureComponent<AutocompleteProps> {
             listTestId,
         } = this.props;
 
+        console.info(inputProps);
+
         return (
             <Downshift
                 defaultHighlightedIndex={ 0 }
                 initialHighlightedIndex={ initialHighlightedIndex }
                 initialInputValue={ initialValue }
                 itemToString={ this.itemToString }
-                labelId={ inputProps.labelid }
+                labelId={ inputProps && inputProps.labelid ? inputProps.labelid : null }
                 onChange={ onSelect }
                 onStateChange={ this.handleStateChange }
                 stateReducer={ this.stateReducer }
