@@ -46,7 +46,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
         className: 'form-input optimizedCheckout-form-input',
         id: getAddressFormFieldInputId(name),
         labelid: labelID,
-    }), [name]);
+    }), [name, labelID]);
 
     const renderInput = useCallback(({ field }: FieldProps) => (
         <GoogleAutocomplete
@@ -79,7 +79,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
         <div className={ `dynamic-form-field dynamic-form-field--addressLineAutocomplete` }>
             <FormField
                 input={ renderInput }
-                label={<label id={ labelID } htmlFor={ inputProps.id } className="form-label optimizedCheckout-form-label">{ labelContent }</label>}
+                label={ <label className="form-label optimizedCheckout-form-label" htmlFor={ inputProps.id } id={ labelID } >{ labelContent }</label> }
                 name={ fieldName }
             />
         </div>
