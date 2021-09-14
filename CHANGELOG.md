@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.164.1-alpha.1631583802231](https://github.com/bigcommerce/checkout-js/compare/v1.164.0...v1.164.1-alpha.1631583802231) (2021-09-14)
+
+
+### Features
+
+* **payment:** INT-4809 Remove compliance section in Drop-in ([bafb704](https://github.com/bigcommerce/checkout-js/commit/bafb704159fa303aad05c0983cc05079b0a1ed1e))
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-5980 invalid aria-labelledby values ([cc9c4c4](https://github.com/bigcommerce/checkout-js/commit/cc9c4c4f52309979a1f7759461f767b1e3f7effc))
+
 ## [1.164.0](https://github.com/bigcommerce/checkout-js/compare/v1.163.7...v1.164.0) (2021-09-02)
 
 
