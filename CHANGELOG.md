@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.168.1-alpha.1632180721071](https://github.com/bigcommerce/checkout-js/compare/v1.168.0...v1.168.1-alpha.1632180721071) (2021-09-20)
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-5928 Shopper cannot switch back to use single shipping address in checkout ([efc4f00](https://github.com/bigcommerce/checkout-js/commit/efc4f00cbbd4c32749cd841d9242c3ec2d7f6f3c))
+* **checkout:** CHECKOUT-5928 Shopper cannot switch back to use single shipping address in checkout ([70eafc3](https://github.com/bigcommerce/checkout-js/commit/70eafc344829ad085fc47371ebde74b4b089ad74))
+
 ## [1.168.0](https://github.com/bigcommerce/checkout-js/compare/v1.167.0...v1.168.0) (2021-09-15)
 
 
