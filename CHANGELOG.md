@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.175.2-alpha.1633906135781](https://github.com/bigcommerce/checkout-js/compare/v1.175.1...v1.175.2-alpha.1633906135781) (2021-10-10)
+
+
+### Bug Fixes
+
+* **checkout:** CHECKOUT-6030 remove pick list items from checkout address entry ([568a859](https://github.com/bigcommerce/checkout-js/commit/568a8597352ba8ebcb9da4bf0b65bbf56c2c5574))
+
 ### [1.175.1](https://github.com/bigcommerce/checkout-js/compare/v1.175.0...v1.175.1) (2021-10-07)
 
 
