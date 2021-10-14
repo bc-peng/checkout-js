@@ -24,6 +24,7 @@ export interface GoogleAutocompleteFormFieldProps {
 const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormFieldProps>  = ({
     field: {
         name,
+        default: placeholder,
     },
     countryCode,
     supportedCountries,
@@ -46,6 +47,7 @@ const GoogleAutocompleteFormField: FunctionComponent<GoogleAutocompleteFormField
         className: 'form-input optimizedCheckout-form-input',
         id: getAddressFormFieldInputId(name),
         'aria-labelledby': labelId,
+        placeholder,
     }), [name, labelId]);
 
     const renderInput = useCallback(({ field }: FieldProps) => (
