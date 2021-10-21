@@ -7,7 +7,6 @@ import React from 'react';
 import { getCart } from '../../cart/carts.mock';
 import { TranslatedString } from '../../locale';
 import { getConsignment } from '../consignment.mock';
-import StaticConsignmentItemList from '../StaticConsignmentItemList';
 
 import ShippingOptionsForm, { ShippingOptionsFormProps } from './ShippingOptionsForm';
 import ShippingOptionsList from './ShippingOptionsList';
@@ -39,7 +38,7 @@ describe('ShippingOptions Component', () => {
         isLoading: jest.fn(() => false),
     };
 
-    it('renders sorted options for all consignments when multi-shipping', () => {
+    it('renders options for all consignments when multi-shipping', () => {
         const component = mount(
             <Formik initialValues={ {} } onSubmit={ noop }>
                 <ShippingOptionsForm
@@ -48,21 +47,7 @@ describe('ShippingOptions Component', () => {
             </Formik>
         );
 
-        expect(component.find(StaticConsignmentItemList).at(0).props()).toEqual(
-            expect.objectContaining({
-                cart: getCart(),
-                consignment: consignments[1],
-            })
-        );
-
         expect(component.find(ShippingOptionsList).length).toEqual(2);
-
-        expect(component.find(StaticConsignmentItemList).at(1).props()).toEqual(
-            expect.objectContaining({
-                cart: getCart(),
-                consignment: consignments[0],
-            })
-        );
 
         expect(component.find('.shippingOptions-panel-message').length)
             .toEqual(0);

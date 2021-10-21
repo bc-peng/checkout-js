@@ -1,7 +1,9 @@
 import { Cart, CheckoutSelectors, Consignment } from '@bigcommerce/checkout-sdk';
+import { map, sortBy, uniq } from 'lodash';
 import { createSelector } from 'reselect';
 
 import { withCheckout, CheckoutContextProps } from '../../checkout';
+import getShippableLineItems from '../getShippableLineItems';
 import getShippingMethodId from '../getShippingMethodId';
 
 import ShippingOptionsForm from './ShippingOptionsForm';
@@ -49,7 +51,7 @@ const isLoadingSelector = createSelector(
     }
 );
 
-function mapToShippingOptions(
+export function mapToShippingOptions(
     { checkoutService, checkoutState }: CheckoutContextProps,
     props: ShippingOptionsProps
 ): WithCheckoutShippingOptionsProps | null {
@@ -66,11 +68,14 @@ function mapToShippingOptions(
         },
     } = checkoutState;
 
-    const consignments = getConsignments() || [];
     const customer = getCustomer();
     const cart = getCart();
     const config = getConfig();
     const checkout = getCheckout();
+    const unsortedConsignments = getConsignments() ||  [];
+    const shippableItems = getShippableLineItems(cart as Cart, unsortedConsignments);
+    const consignmentsOrder = uniq(map(shippableItems, 'consignment.id'));
+    const consignments = sortBy(unsortedConsignments, consignment => consignmentsOrder.indexOf(consignment.id));
 
     if (!config || !checkout || !customer || !cart) {
         return null;
