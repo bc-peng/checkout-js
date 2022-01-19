@@ -19,6 +19,7 @@ export const SUPPORTED_METHODS: string[] = [
     'googlepaycybersourcev2',
     'googlepayorbital',
     'googlepaystripe',
+    'applepay',
 ];
 
 export interface CheckoutButtonListProps {
