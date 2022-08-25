@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.248.1-prerelease.1661409398481](https://github.com/bigcommerce/checkout-js/compare/v1.248.0...v1.248.1-prerelease.1661409398481) (2022-08-25)
+
+
+### Features
+
+* **checkout:** CHECKOUT-6875 Improve accessibility part I ([84976aa](https://github.com/bigcommerce/checkout-js/commit/84976aa6fd43cd40eb2f23a9c2577ac1758ac88d))
+* **checkout:** CHECKOUT-6875 update test ([3cfe500](https://github.com/bigcommerce/checkout-js/commit/3cfe5001c203d858d058c4e9ac1d656518466e30))
+
 ## [1.248.0](https://github.com/bigcommerce/checkout-js/compare/v1.247.3...v1.248.0) (2022-08-24)
 
 
