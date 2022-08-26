@@ -63,7 +63,7 @@ describe('CheckoutStepHeader', () => {
             .toEqual('step-edit-button');
 
         expect(component.prop('className'))
-            .not.toContain('is-readonly');
+            .toContain('is-clickable');
     });
 
     it('does not render edit button if it is not editable', () => {
@@ -75,7 +75,7 @@ describe('CheckoutStepHeader', () => {
             .toEqual(false);
 
         expect(component.prop('className'))
-            .toContain('is-readonly');
+            .toEqual('stepHeader');
     });
 
     it('triggers callback when clicked', () => {
