@@ -12,7 +12,7 @@ const AddressFormSkeleton: FunctionComponent<LoadingSkeletonProps> = ({
                 <div className="address-form-heading-skeleton form-legend optimizedCheckout-headingSecondary" />
             </div>
             <div className="address-form-skeleton">
-                <div className="name">
+                <div className="name-fields-skeleton">
                     <ul>
                         <div className="input-skeleton" />
                     </ul>

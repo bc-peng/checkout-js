@@ -16,7 +16,7 @@ const ChecklistSkeleton: FunctionComponent<ChecklistSkeletonProps> = ({
 
         for (let i = 0; i < rows; i++) {
             content.push(
-                <ul>
+                <ul key={`checklist-skeleton-item${i}`}>
                     <div className="checklist-skeleton-circle" />
                     <div className="checklist-skeleton-rectangle" />
                 </ul>,

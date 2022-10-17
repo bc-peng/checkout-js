@@ -10,7 +10,7 @@ export const LoadingSkeleton: FunctionComponent<LoadingSkeletonProps & { skeleto
     isLoading = true,
     skeleton,
 }) => {
-    const content = children ? <div className="loadingSkeleton">{children}</div> : null;
+    const content = children ? <div className="loading-skeleton">{children}</div> : null;
 
     return <div>{isLoading ? skeleton : content}</div>;
 };
