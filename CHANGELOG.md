@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.261.4-prerelease.1666321209589](https://github.com/bigcommerce/checkout-js/compare/v1.261.3...v1.261.4-prerelease.1666321209589) (2022-10-21)
+
+
+### Features
+
+* **checkout:** CHECKOUT-6852 Add address form skeleton ([37dc330](https://github.com/bigcommerce/checkout-js/commit/37dc330f5f1e8db3b38dfbfe5d75da86cbe962e7))
+* **checkout:** CHECKOUT-6852 Add animations ([3537ee4](https://github.com/bigcommerce/checkout-js/commit/3537ee4c3e6ba45cfd960a789476e9d9f393d237))
+* **checkout:** CHECKOUT-6852 Add customer skeleton ([4af929e](https://github.com/bigcommerce/checkout-js/commit/4af929e577a91bf90c7de9d8dbd64874010da4bb))
+* **checkout:** CHECKOUT-6852 Address PR feedback ([511d851](https://github.com/bigcommerce/checkout-js/commit/511d85146257e8ac4d702fe00c4d0afa40c5ca08))
+* **checkout:** CHECKOUT-6852 Improve mobile loading UX ([b74bd9e](https://github.com/bigcommerce/checkout-js/commit/b74bd9e1d858ac2b5309932d9dd3d9e5f5205806))
+* **checkout:** CHECKOUT-6852 Update tests ([dc6f490](https://github.com/bigcommerce/checkout-js/commit/dc6f490f222846fbed69908a9131ddf6bcc5be8e))
+
 ### [1.261.3](https://github.com/bigcommerce/checkout-js/compare/v1.261.2...v1.261.3) (2022-10-14)
 
 ### [1.261.2](https://github.com/bigcommerce/checkout-js/compare/v1.261.1...v1.261.2) (2022-10-13)
