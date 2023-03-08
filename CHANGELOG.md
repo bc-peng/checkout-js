@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.295.2-prerelease.1678318199258](https://github.com/bigcommerce/checkout-js/compare/v1.295.1...v1.295.2-prerelease.1678318199258) (2023-03-08)
+
+
+### Features
+
+* **checkout:** CHECKOUT-7233 Address feedback ([9d34fb2](https://github.com/bigcommerce/checkout-js/commit/9d34fb289220b2aa821ee3ab15cc97842bf8419d))
+* **checkout:** CHECKOUT-7233 Address feedback II ([f14baf6](https://github.com/bigcommerce/checkout-js/commit/f14baf6329f695468cf75671db8de934d9d6686f))
+* **checkout:** CHECKOUT-7233 Checkout wallet button container with testing tool ([4d822ed](https://github.com/bigcommerce/checkout-js/commit/4d822ed1de3e675892fc2dfbd487b150ea1a2cee))
+* **checkout:** CHECKOUT-7233 Remove testing tool ([c82e240](https://github.com/bigcommerce/checkout-js/commit/c82e2403a018974f643a1d560b0494b4e7cfc725))
+* **checkout:** CHECKOUT-7233 Update tests ([eeddfa6](https://github.com/bigcommerce/checkout-js/commit/eeddfa677378dcf7165869be482521f533c9bc74))
+
 ### [1.295.1](https://github.com/bigcommerce/checkout-js/compare/v1.295.0...v1.295.1) (2023-03-01)
 
 
