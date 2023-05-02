@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.311.2-prerelease.1683005680324](https://github.com/bigcommerce/checkout-js/compare/v1.311.1...v1.311.2-prerelease.1683005680324) (2023-05-02)
+
+
+### Features
+
+* **checkout:** CHECKOUT-7281 Fix build ([d23e4cf](https://github.com/bigcommerce/checkout-js/commit/d23e4cf377bcbf5355a416a9e90bd44b3b63942e))
+* **checkout:** CHECKOUT-7281 Fix Dropdown menus ([3ddf502](https://github.com/bigcommerce/checkout-js/commit/3ddf50247d5845950193b3ae62212216913dc776))
+* **checkout:** CHECKOUT-7281 Fix lint ([899f9f5](https://github.com/bigcommerce/checkout-js/commit/899f9f523c4c66f00eee9710867d7ba60320ff48))
+* **checkout:** CHECKOUT-7281 Upgrade React 17 ([a13925b](https://github.com/bigcommerce/checkout-js/commit/a13925beff9465ca85e6a8da334b9ad2275b18d6))
+
 ### [1.311.1](https://github.com/bigcommerce/checkout-js/compare/v1.311.0...v1.311.1) (2023-04-27)
 
 ## [1.311.0](https://github.com/bigcommerce/checkout-js/compare/v1.310.0...v1.311.0) (2023-04-26)
