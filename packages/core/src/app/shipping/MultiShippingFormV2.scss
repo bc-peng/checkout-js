@@ -82,7 +82,7 @@ $allocate-items-table-image-width: 20%;
         display: flex;
         margin-bottom: spacing("base");
         justify-content: space-between;
-        
+
         p {
             margin-bottom: 0;
         }
@@ -97,7 +97,7 @@ $allocate-items-table-image-width: 20%;
         margin-top: spacing("base");
         border-left: none;
         border-right: none;
-    
+
         thead {
             background: none;
             tr {
@@ -115,7 +115,7 @@ $allocate-items-table-image-width: 20%;
             }
         }
 
-        
+
         tbody {
             tr {
                 border-top: container("border");
@@ -147,7 +147,7 @@ $allocate-items-table-image-width: 20%;
                 width: $allocate-items-table-image-width;
                 padding-right: spacing("half");
             }
-            
+
             .left-to-allocate-item-name {
                 p {
                     margin-bottom: 0;
@@ -159,6 +159,18 @@ $allocate-items-table-image-width: 20%;
                     margin: 0;
                 }
             }
-        }  
+        }
+    }
+}
+
+.shipping-option-header {
+    margin: spacing("base") 0;
+}
+
+.shipping-option-item {
+    display: block;
+
+    ul{
+        margin: 0 0 spacing("quarter") 0;
     }
 }
