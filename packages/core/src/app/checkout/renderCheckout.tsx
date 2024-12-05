@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import { configurePublicPath } from '../common/bundler';
 
@@ -29,8 +29,13 @@ export default function renderCheckout({
         });
     }
 
-    ReactDOM.render(
-        <CheckoutApp containerId={containerId} publicPath={configuredPublicPath} {...props} />,
-        document.getElementById(containerId),
-    );
+    const container = document.getElementById(containerId);
+
+    if(container) {
+        const root = createRoot(container);
+
+        root.render(
+            <CheckoutApp containerId={containerId} publicPath={configuredPublicPath} {...props} />,
+        );
+    }
 }
